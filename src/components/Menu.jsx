@@ -2,7 +2,7 @@ import styles from '@styles/Menu.module.scss';
 
 const Menu = () => {
   return (
-    <div className={styles.Menu}>
+    <div className={styles.menu}>
       <ul>
         <li>
           <a href="/" className={styles.title}>

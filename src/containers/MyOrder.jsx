@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 import AppContext from '@context/AppContext';
@@ -19,7 +20,7 @@ const MyOrder = () => {
   };
 
   return (
-    <aside className={styles.MyOrder}>
+    <aside className={styles.myOrder}>
       <div className={styles.titleContainer}>
         <Image src={IconArrow} alt="arrow" />
         <p className={styles.title}>My order</p>
@@ -34,7 +35,9 @@ const MyOrder = () => {
           </p>
           <p>${sumTotal()}</p>
         </div>
-        <button className={styles.primaryButton}>Checkout</button>
+        <Link href="/checkout" className={styles.primaryButton}>
+          Checkout
+        </Link>
       </div>
     </aside>
   );

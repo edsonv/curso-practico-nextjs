@@ -1,6 +1,6 @@
-@use 'vars';
+@import 'vars';
 
-.Checkout {
+.checkout {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -12,13 +12,13 @@
   margin-bottom: 40px;
 }
 
-.Checkout-container {
+.checkoutContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
 
-.Checkout-content {
+.checkoutContent {
   display: flex;
   flex-direction: column;
 }

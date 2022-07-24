@@ -1,5 +1,5 @@
-import useGetProducts from '../hooks/useGetProducts';
 import ProductItem from '@components/ProductItem';
+import useGetProducts from '@hooks/useGetProducts';
 import styles from '@styles/ProductList.module.scss';
 
 const API = 'https://api.escuelajs.co/api/v1/products';
@@ -8,8 +8,8 @@ const ProductList = () => {
   const products = useGetProducts(API);
 
   return (
-    <section className="main-container">
-      <div className="ProductList">
+    <section className={styles.mainContainer}>
+      <div className={styles.ProductList}>
         {products.map((product) => {
           return <ProductItem key={product.id} product={product} />;
         })}

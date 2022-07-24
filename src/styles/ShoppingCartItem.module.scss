@@ -1,6 +1,6 @@
 @import 'vars';
 
-.orderItem {
+.shoppingCartItem {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   gap: 16px;
@@ -8,22 +8,22 @@
   align-items: center;
 }
 
-.orderItem figure {
+.shoppingCartItem figure {
   margin: 0;
 }
 
-.orderItem figure img {
+.shoppingCartItem figure img {
   width: 70px;
   height: 70px;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.orderItem p:nth-child(2) {
+.shoppingCartItem p:nth-child(2) {
   color: var(--very-light-pink);
 }
 
-.orderItem p:nth-child(3) {
+.shoppingCartItem p:nth-child(3) {
   font-size: var(--md);
   font-weight: bold;
 }

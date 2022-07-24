@@ -11,12 +11,12 @@ const OrderItem = ({ product }) => {
     removeFromCart(product);
   };
   return (
-    <div className={styles.OrderItem}>
+    <div className={styles.orderItem}>
       <figure>
-        <Image src={product.images[0]} alt={product.title} />
+        <Image src={product?.images[0]} alt={product?.title} width="100" height="100" layout="responsive" />
       </figure>
-      <p>{product.title}</p>
-      <p>${product.price}</p>
+      <p>{product?.title}</p>
+      <p>${product?.price}</p>
       <Image src={IconClose} alt="close" onClick={() => handleRemove(product)} />
     </div>
   );

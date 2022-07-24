@@ -3,11 +3,11 @@ import styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
   return (
-    <div className="Checkout">
-      <div className="Checkout-container">
-        <h1 className="title">My order</h1>
-        <div className="Checkout-content">
-          <div className="order">
+    <div className={styles.checkout}>
+      <div className={styles.checkoutContainer}>
+        <h1 className={styles.title}>My order</h1>
+        <div className={styles.checkoutContent}>
+          <div className={styles.order}>
             <p>
               <span>03.25.21</span>
               <span>6 articles</span>
