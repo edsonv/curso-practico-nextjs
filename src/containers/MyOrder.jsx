@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import Image from 'next/image';
+
 import AppContext from '@context/AppContext';
 
 import OrderItem from '@components/OrderItem';
@@ -18,21 +20,21 @@ const MyOrder = () => {
 
   return (
     <aside className={styles.MyOrder}>
-      <div className="title-container">
-        <img src={IconArrow} alt="arrow" />
-        <p className="title">My order</p>
+      <div className={styles.titleContainer}>
+        <Image src={IconArrow} alt="arrow" />
+        <p className={styles.title}>My order</p>
       </div>
-      <div className="my-order-content">
+      <div className={styles.myOrderContent}>
         {state.cart.map((product) => (
           <OrderItem product={product} key={`orderItem-${product.id}`} />
         ))}
-        <div className="order">
+        <div className={styles.order}>
           <p>
             <span>Total</span>
           </p>
           <p>${sumTotal()}</p>
         </div>
-        <button className="primary-button">Checkout</button>
+        <button className={styles.primaryButton}>Checkout</button>
       </div>
     </aside>
   );

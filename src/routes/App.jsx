@@ -15,9 +15,9 @@ import NotFound from '@pages/NotFound';
 
 import AppContext from '@context/AppContext';
 
-import useInitialState from '../hooks/useInitialState';
+import useInitialState from '@hooks/useInitialState';
 
-import '../styles/global.scss';
+import '@styles/global.scss';
 
 function App() {
   const initialState = useInitialState();

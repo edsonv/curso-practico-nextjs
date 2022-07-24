@@ -13,11 +13,11 @@
   border: 1px solid var(--very-light-pink);
 }
 
-.title-container {
+.titleContainer {
   display: flex;
 }
 
-.title-container img {
+.titleContainer img {
   transform: rotate(180deg);
   margin-right: 14px;
 }
@@ -53,7 +53,7 @@
   font-weight: bold;
 }
 
-.primary-button {
+.primaryButton {
   background-color: var(--hospital-green);
   border-radius: 8px;
   border: none;

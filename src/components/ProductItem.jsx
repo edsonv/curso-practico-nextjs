@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import IconAddToCart from '@icons/bt_add_to_cart.svg';
 import styles from '@styles/ProductItem.module.scss';
@@ -12,14 +13,14 @@ const ProductItem = ({ product }) => {
 
   return (
     <div className={styles.ProductItem}>
-      <img src={product.images[0]} alt={product.title} />
+      <Image src={product.images[0]} alt={product.title} />
       <div className="product-info">
         <div>
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
         <figure onClick={() => handleClick(product)}>
-          <img src={IconAddToCart} alt="" />
+          <Image src={IconAddToCart} alt="" />
         </figure>
       </div>
     </div>
