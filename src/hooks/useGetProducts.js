@@ -15,8 +15,9 @@ const useGetProducts = (API) => {
 
             return RegExTest.test(product.images[0]);
           });
-          setProducts(filteredProducts);
+          return filteredProducts;
         });
+      setProducts(response);
     };
     fetch();
   }, []);

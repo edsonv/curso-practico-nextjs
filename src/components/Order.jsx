@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import IconArrow from '@icons/flechita.svg';
-import styles '@styles/Order.module.scss';
+import styles from '@styles/Order.module.scss';
 
 const Order = () => {
   return (
@@ -10,9 +10,9 @@ const Order = () => {
         <span>6 articles</span>
       </p>
       <p>$560.00</p>
-      <Image src={ IconArrow } alt="arrow" />
+      <Image src={IconArrow} alt="arrow" />
     </div>
   );
-}
+};
 
 export default Order;
