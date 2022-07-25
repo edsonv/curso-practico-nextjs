@@ -10,6 +10,7 @@ const OrderItem = ({ product }) => {
   const handleRemove = (product) => {
     removeFromCart(product);
   };
+
   return (
     <div className={styles.orderItem}>
       <figure>

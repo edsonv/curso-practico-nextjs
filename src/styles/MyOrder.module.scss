@@ -11,6 +11,7 @@
   bottom: 0;
   border-radius: 6px;
   border: 1px solid $--very-light-pink;
+  z-index: 9999;
 }
 
 .myOrderContainer {
@@ -36,7 +37,7 @@
 }
 
 .title {
-  font-size: var(--lg);
+  font-size: $--lg;
   font-weight: bold;
 }
 
@@ -45,7 +46,7 @@
   grid-template-columns: auto 1fr;
   gap: 16px;
   align-items: center;
-  background-color: var(--text-input-field);
+  background-color: $--text-input-field;
   margin-bottom: 24px;
   border-radius: 8px;
   padding: 0 24px;
@@ -57,7 +58,7 @@
 }
 
 .order p span:nth-child(1) {
-  font-size: var(--md);
+  font-size: $--md;
   font-weight: bold;
 }
 
@@ -67,13 +68,13 @@
 }
 
 .primaryButton {
-  background-color: var(--hospital-green);
+  background-color: $--hospital-green;
   border-radius: 8px;
   border: none;
-  color: var(--white);
+  color: $--white;
   width: 100%;
   cursor: pointer;
-  font-size: var(--md);
+  font-size: $--md;
   font-weight: bold;
   height: 50px;
 }
