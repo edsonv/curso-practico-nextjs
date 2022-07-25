@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['placeimg.com', 'api.lorem.space', 'i0.wp.com'],
+    domains: ['placeimg.com', 'api.lorem.space', 'i0.wp.com', 'm.media-amazon.com'],
   },
   // env: {
   //   customKey: 'customValue',
