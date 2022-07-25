@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import '../styles/SendEmail.scss';
 
 const SendEmail = () => {
@@ -13,8 +14,8 @@ const SendEmail = () => {
         </div>
         <button className="primary-button login-button">Login</button>
         <p className="resend">
-          <span>Didn't receive the email?</span>
-          <a href="/">Resend</a>
+          <span>Didn&apos;t receive the email?</span>
+          <Link href="/">Resend</Link>
         </p>
       </div>
     </div>

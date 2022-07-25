@@ -20,7 +20,7 @@ const useGetProducts = (API) => {
       setProducts(response);
     };
     fetch();
-  }, []);
+  }, [API]);
 
   return products;
 };
