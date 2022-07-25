@@ -10,5 +10,7 @@ module.exports = {
   rules: {
     indent: ['error', 2],
     semi: ['error', 'always'],
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
   },
 };

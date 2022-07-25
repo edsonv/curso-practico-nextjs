@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../assets/logos/logo_yard_sale.svg';
 import '../styles/Login.scss';
@@ -32,7 +33,7 @@ const Login = () => {
           <button className="primary-button login-button" onClick={handleSubmit}>
             Log in
           </button>
-          <a href="/">Forgot my password</a>
+          <Link href="/">Forgot my password</Link>
         </form>
         <button className="secondary-button signup-button">Sign up</button>
       </div>
