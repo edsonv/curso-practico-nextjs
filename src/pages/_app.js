@@ -9,12 +9,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <AppContext.Provider value={initialState}>
       <Header />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HZN3ZX6Q9D" />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ELFBB9G0RN" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-HZN3ZX6Q9D');`}
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ELFBB9G0RN');`}
       </Script>
       <Component {...pageProps} />
     </AppContext.Provider>
