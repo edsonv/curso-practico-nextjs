@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MyOrder from '@containers/MyOrder';
-import Menu from './Menu';
+import Menu from '@components/Menu';
 
 import AppContext from '@context/AppContext';
 
@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <nav className={styles.nav}>
-      <Image src={IconMenu} alt="menu" className={styles.menu} />
+      <img src={IconMenu.src} alt="menu" className={styles.menu} />
       <div className={styles.navbarLeft}>
         <Link href="/">
           <Image src={Logo} alt="logo" className={styles.navLogo} />

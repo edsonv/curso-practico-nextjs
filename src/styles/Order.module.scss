@@ -1,10 +1,10 @@
 @import 'vars';
 
 .order {
+  align-items: center;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 16px;
-  align-items: center;
   margin-bottom: 12px;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .order p span:nth-child(2) {
-  font-size: $--sm;
   color: $--very-light-pink;
+  font-size: $--sm;
 }
 
 .order p:nth-child(2) {
-  text-align: end;
   font-weight: bold;
+  text-align: end;
 }

@@ -1,11 +1,11 @@
 @import 'vars';
 
 .shoppingCartItem {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  gap: 16px;
-  margin-bottom: 24px;
   align-items: center;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 1fr auto auto;
+  margin-bottom: 24px;
 }
 
 .shoppingCartItem figure {
@@ -13,10 +13,10 @@
 }
 
 .shoppingCartItem figure img {
-  width: 70px;
-  height: 70px;
   border-radius: 20px;
+  height: 70px;
   object-fit: cover;
+  width: 70px;
 }
 
 .shoppingCartItem p:nth-child(2) {
