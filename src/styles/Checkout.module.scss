@@ -1,10 +1,10 @@
 @import 'vars';
 
 .checkout {
-  width: 100%;
-  height: 100vh;
   display: grid;
+  height: 100vh;
   place-items: center;
+  width: 100%;
 }
 
 .title {
@@ -24,13 +24,13 @@
 }
 
 .order {
+  align-items: center;
+  background-color: $--text-input-field;
+  border-radius: 8px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
-  align-items: center;
-  background-color: $--text-input-field;
   margin-bottom: 24px;
-  border-radius: 8px;
   padding: 0 24px;
 }
 
@@ -45,11 +45,11 @@
 }
 
 .order p span:nth-child(2) {
-  font-size: $--sm;
   color: $--very-light-pink;
+  font-size: $--sm;
 }
 
 .order p:nth-child(2) {
-  text-align: end;
   font-weight: bold;
+  text-align: end;
 }

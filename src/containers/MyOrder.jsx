@@ -23,7 +23,7 @@ const MyOrder = () => {
     <aside className={styles.myOrder}>
       <div className={styles.titleContainer}>
         <Image src={IconArrow} alt="arrow" />
-        <p className={styles.title}>My order</p>
+        <p className={styles.title}>&nbsp;My order</p>
       </div>
       <div className={styles.myOrderContent}>
         {state.cart.map((product) => (
