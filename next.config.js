@@ -1,5 +1,4 @@
 const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
 
 module.exports = withPWA({
   pwa: {
@@ -7,11 +6,10 @@ module.exports = withPWA({
     register: true,
     mode: 'production',
     disable: false,
-    runtimeCaching,
-    buildExcludes: [/middleware-manifest\.json$/],
   },
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: ['placeimg.com', 'api.lorem.space', 'i0.wp.com', 'm.media-amazon.com'],
   },
 });
